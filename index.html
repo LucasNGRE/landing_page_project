@@ -1,78 +1,109 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrimePrompts</title>
     <link rel="shortcut icon" href="assets/logo.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PrimePrompts</title>
 </head>
+
 <body>
     <header class="header">
         <nav class="header__nav">
             <div class="nav__logo">
-                <img src="assets/logo.svg" alt="logo" class="nav__logo-img">
+                <img src="assets/logo.svg" alt="Logo" class="nav__logo-img">
                 <h3 class="nav__logo-title">PrimePrompts</h3>
             </div>
             <div class="nav__auth">
-                <button class="nav__auth-button nav__auth-button--signin">Connexion</button>
-                <button class="nav__auth-button nav__auth-button--signup">Essayer PrimePrompts</button>
+                <button type="button" class="nav__auth-button nav__auth-button--signin">Connexion</button>
+                <button type="button" class="nav__auth-button nav__auth-button--signup">Essayer PrimePrompts</button>
+            </div>
+            <div class="nav__mobile-menu" id="navMobileMenu">
+                <img src="assets/menu.svg" alt="Menu">
             </div>
         </nav>
     </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu__close" id="mobileMenuClose">&times;</button>
+        <nav class="mobile-menu__nav">
+            <button type="button" class="nav__auth-button nav__auth-button--signin">Connexion</button>
+            <button type="button" class="nav__auth-button nav__auth-button--signup">Essayer PrimePrompts</button>
+        </nav>
+    </div>
+    
+
     <main class="main">
         <div class="main__container">
             <div class="main__hero">
-                <h1 class="main__hero-title">
-                    Organisez vos prompts IA <br />rapidement, efficacement.
-                </h1>
-                <p class="main__hero-description">
-                    Une application simple pour gérer et retrouver <br />
-                    facilement vos prompts IA.
+                <h1 class="main__hero-title">Organisez vos prompts IA <br />  <span>rapidement, efficacement.</span></h1>
+                <p class="main__hero-description">Une application simple pour gérer et retrouver <br />facilement vos prompts IA.</p>
+                <p class="main__hero-mobile-description">
+                    Gérez et retrouvez <br /> facilement <br /> vos prompts IA.
                 </p>
                 <button type="button" class="main__hero-button">Essayer PrimePrompts</button>
             </div>
+    
             <div class="main__features">
                 <div class="main__feature main__feature--add">
-                    <img src="assets/add.svg" alt="Add" class="main__feature-icon">
+                    <img src="assets/add.svg" alt="Ajout de Prompts" class="main__feature-icon">
                     <h3 class="main__feature-title">Ajout de Prompts</h3>
-                    <p class="main__feature-description">Ajoutez de nouveaux prompts à votre <br />
-                    collection en quelques clics.</p>
+                    <p class="main__feature-description">
+                        Ajoutez de nouveaux prompts à votre <br />collection en quelques clics.
+                    </p>
                 </div>
                 <div class="main__feature main__feature--sort">
-                    <img src="assets/sort.svg" alt="Sort" class="main__feature-icon">
+                    <img src="assets/sort.svg" alt="Classer par Catégorie" class="main__feature-icon">
                     <h3 class="main__feature-title">Classer par Catégorie</h3>
-                    <p class="main__feature-description">Organiser les prompts en différentes <br />
-                    catégories pour une gestion facile.</p>
+                    <p class="main__feature-description">
+                        Organisez les prompts en différentes <br />catégories pour une gestion facile.
+                    </p>
                 </div>
                 <div class="main__feature main__feature--manage">
-                    <img src="assets/manage.svg" alt="Manage" class="main__feature-icon">
+                    <img src="assets/manage.svg" alt="Gérer les Prompts" class="main__feature-icon">
                     <h3 class="main__feature-title">Gérer les Prompts</h3>
-                    <p class="main__feature-description">Recherchez des prompts spécifiques, <br />
-                    modifiez ou supprimez-les.</p>
+                    <p class="main__feature-description">
+                        Recherchez des prompts spécifiques, <br />modifiez ou supprimez-les.
+                    </p>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
-        <div>
-            <div>
-                <p>&copy; 2024 PrimePrompts Labs</p>
-                <p>Mentions légales</p>
-                <p>Politique de confidentialité</p>
+    
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__legal">
+                <p class="footer__legal-item">&copy; 2024 PrimePrompts Labs</p>
+                <p class="footer__legal-item"><a href="#">Mentions légales</a></p>
+                <p class="footer__legal-item"><a href="#">Politique de confidentialité</a></p>
             </div>
-            <div>
-                <div>
-                    <img src="assets/logo.svg" alt="logo">
-                    <h3>PrimePrompts</h3>
+            <div class="footer__info">
+                <div class="footer__logo">
+                    <img src="assets/logo.svg" alt="Logo" class="footer__logo-img">
+                    <h3 class="footer__logo-title">PrimePrompts</h3>
                 </div>
-                <div>
-                    <a href="https://facebook.com"><img src="assets/socials/facebook.svg" alt="Facebook"></a>
-                    <a href="https://instagram.com"><img src="assets/socials/instagram.svg" alt="Instagram"></a>
-                    <a href="https://linkedin.com"><img src="assets/socials/linkedin.svg" alt="Linkedin"></a>
+                <div class="footer__socials">
+                    <a href="https://instagram.com" target="_blank" rel="noopener" class="footer__social-link">
+                        <img src="assets/socials/instagram.svg" alt="Instagram" class="footer__social-icon">
+                        <span class="footer__social-text">Instagram</span>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" class="footer__social-link">
+                        <img src="assets/socials/linkedin.svg" alt="LinkedIn" class="footer__social-icon">
+                        <span class="footer__social-text">LinkedIn</span>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener" class="footer__social-link">
+                        <img src="assets/socials/facebook.svg" alt="Facebook" class="footer__social-icon">
+                        <span class="footer__social-text">Facebook</span>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
